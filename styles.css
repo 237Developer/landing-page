@@ -1,0 +1,224 @@
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0; 
+}
+html{
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 18px; 
+    color: #E5EBE7; 
+}
+:root{
+    --couleur-principale: #1F2937;
+    --couleur-seconde: #3882F6; 
+    --couleur-logo:#F9FAF8;
+}
+
+/* Style du Hero */
+
+#header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 476px; 
+    background-color: var(--couleur-principale);
+    align-items: center; 
+    justify-content: space-between;
+    padding:14px 34px 80px; 
+}
+#nav_bar{
+display: flex; 
+justify-content:space-between;
+align-items: center;
+width: 100%; 
+height: 58px; 
+}
+#nav_bar p{
+    font-size: 24px; 
+    font-weight: bold;
+    color:var(--couleur-logo); 
+}
+ul{
+    width: 320px;
+    height:100%; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+#hero{
+    width: 100%;
+    height: 236px;
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    gap:36px;
+}
+#hero-text{
+    display: flex; 
+    flex-direction: column;
+    width: 547px; 
+    height:100%; 
+    justify-content: flex-start;
+    align-items:flex-start;
+    gap: 7px; 
+}
+#main-text{
+    font-size: 48px; 
+    font-weight:900;
+    color:white;
+}
+#sub_text{
+    font-weight:900px;
+}
+#gitHub_button{
+    width:135px;
+    height:45px; 
+    background-color:var(--couleur-seconde);
+    font-weight:400;
+    border:none; 
+    border-radius: 7px;
+    color:white;
+}
+#hero-image{
+    width:371px; 
+    height: 100%; 
+    object-fit:cover;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* Style de section de Projets */
+
+#projet{
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    height: 383px; 
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 15px; 
+    padding:20px 0px; 
+    color: var(--couleur-principale);
+}
+
+#projet-card{
+    display: flex;
+    gap: 32px;
+    width: 100%;
+    height: 286px;
+    justify-content: center;
+    align-items:flex-start;
+}
+#projet-card div{
+    display: flex; 
+    flex-direction: column; 
+    height: 100%; 
+    width:220px; 
+    gap: 5px; 
+    justify-content: flex-start;
+    align-items:flex-start; 
+
+}
+
+#projet-card div img{
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid var(--couleur-seconde);
+    border-radius: 13px; 
+}
+
+/* Styles pour la section des témoignages */
+
+#temoignage{
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    color: var(--couleur-principale); 
+    font-weight: 200;
+    font-size: 36px; 
+    background-color:#E5E7EB;
+    width: 100%;
+    height: 261px; 
+}
+#temoignage p{
+    width: 768px;
+    height: 210px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-style: italic;
+    align-items: center;
+
+}
+
+#temoignage p span{
+    align-self:flex-end;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 24px;
+}
+
+/* Style de l'appel à laction  */
+
+#appel_action{
+    width: 100%;
+    height:261px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#appel_action div{
+display: flex; 
+justify-content: center;
+align-items: center;
+gap:160px;
+background-color: var(--couleur-seconde);
+width: 806px;
+height: 125px;
+border-radius: 10px;
+}
+#appel_cation div p span{
+    color: white;
+}
+
+#appel_action div button{
+    border: 2px solid white; 
+    width: 110px; 
+    height: 45px; 
+    color: white; 
+    background-color: transparent;
+    border-radius: 7px; 
+}
+/* Style du footer */
+#footer{
+    width: 100%;
+    height: 132px; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    font-weight: bold;
+    font-size:20px; 
+    background-color: var(--couleur-principale);
+}
+/*Autres styles */
+button:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+    transition:all ease-in-out 0.3s; 
+
+}
+
+button:active{
+    background-color:#0d47a5 !important;
+    border-color:#0d47a5 !important;
+}
